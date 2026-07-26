@@ -11,15 +11,17 @@ export default function Footer() {
             <h3 className="text-lg font-bold mb-4">
               {siteConfig.businessName}
             </h3>
-            <p className="text-gray-400 text-sm mb-2">{siteConfig.address}</p>
-            <p className="text-gray-400 text-sm mb-2">
-              {siteConfig.city}, {siteConfig.stateAbbr} {siteConfig.zip}
-            </p>
             <a
               href={`tel:${siteConfig.phoneRaw}`}
               className="text-accent text-lg font-bold hover:text-white transition-colors"
             >
               {siteConfig.phone}
+            </a>
+            <a
+              href={`mailto:${siteConfig.email}`}
+              className="block text-gray-400 text-sm mt-2 hover:text-white transition-colors"
+            >
+              {siteConfig.email}
             </a>
             <p className="text-gray-400 text-sm mt-2">{siteConfig.hours}</p>
           </div>

@@ -23,48 +23,6 @@ export default function HomePage() {
 
       <QuoteForm />
 
-      {/* Why Choose Us */}
-      <section className="py-16 px-4">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-navy text-center mb-12">
-            Why {city} Homeowners Choose {businessName}
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center p-6">
-              <div className="text-4xl mb-4">&#128167;</div>
-              <h3 className="text-xl font-bold text-navy mb-3">
-                Licensed Well Drillers
-              </h3>
-              <p className="text-gray-text">
-                Fully licensed and insured in {state}. Every well we drill
-                meets state code requirements and is built to last for decades.
-              </p>
-            </div>
-            <div className="text-center p-6">
-              <div className="text-4xl mb-4">&#9201;</div>
-              <h3 className="text-xl font-bold text-navy mb-3">
-                Fast Response Times
-              </h3>
-              <p className="text-gray-text">
-                Well pump failures can leave your family without water. We
-                prioritize emergency calls and offer same-day service when
-                possible.
-              </p>
-            </div>
-            <div className="text-center p-6">
-              <div className="text-4xl mb-4">&#128176;</div>
-              <h3 className="text-xl font-bold text-navy mb-3">
-                Free Estimates
-              </h3>
-              <p className="text-gray-text">
-                We evaluate your property, discuss your water needs, and provide
-                a clear, written estimate before any work begins. No surprises.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* About Well Drilling in City */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
@@ -104,6 +62,48 @@ export default function HomePage() {
               height={600}
               className="w-full h-auto object-cover"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="py-16 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-navy text-center mb-12">
+            Why {city} Homeowners Choose {businessName}
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center p-6">
+              <div className="text-4xl mb-4">&#128167;</div>
+              <h3 className="text-xl font-bold text-navy mb-3">
+                Licensed Well Drillers
+              </h3>
+              <p className="text-gray-text">
+                Fully licensed and insured in {state}. Every well we drill
+                meets state code requirements and is built to last for decades.
+              </p>
+            </div>
+            <div className="text-center p-6">
+              <div className="text-4xl mb-4">&#9201;</div>
+              <h3 className="text-xl font-bold text-navy mb-3">
+                Fast Response Times
+              </h3>
+              <p className="text-gray-text">
+                Well pump failures can leave your family without water. We
+                prioritize emergency calls and offer same-day service when
+                possible.
+              </p>
+            </div>
+            <div className="text-center p-6">
+              <div className="text-4xl mb-4">&#128176;</div>
+              <h3 className="text-xl font-bold text-navy mb-3">
+                Free Estimates
+              </h3>
+              <p className="text-gray-text">
+                We evaluate your property, discuss your water needs, and provide
+                a clear, written estimate before any work begins. No surprises.
+              </p>
+            </div>
           </div>
         </div>
       </section>
