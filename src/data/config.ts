@@ -46,7 +46,7 @@ export const siteConfig = {
   ghlFormUrl: "https://api.leadconnectorhq.com/widget/form/VgAT3De1AUySKh8jRztU",
 
   // Analytics — add IDs when ready, leave empty to disable
-  ga4Id: "", // e.g. "G-XXXXXXXXXX"
+  ga4Id: "G-3Z8QK8YFWW",
   clarityId: "", // e.g. "abcdefghij"
 
   // Meta defaults
