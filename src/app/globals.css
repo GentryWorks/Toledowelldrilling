@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #1a3a5c;
+  --color-navy-dark: #0f2640;
+  --color-navy-light: #2a5a8c;
+  --color-accent: #2a7de1;
+  --color-accent-dark: #1a5db1;
+  --color-gray-bg: #f8f9fa;
+  --color-gray-border: #e5e7eb;
+  --color-gray-text: #6b7280;
+
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+}

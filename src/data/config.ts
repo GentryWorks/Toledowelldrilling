@@ -1,0 +1,50 @@
+// ============================================================
+// SITE CONFIG — Change these values for each city deployment
+// ============================================================
+
+export const siteConfig = {
+  // Business info
+  businessName: "Toledo Well Drilling",
+  phone: "(419) 555-0199",
+  phoneRaw: "4195550199",
+  email: "info@toledowelldrilling.com",
+
+  // Location
+  city: "Toledo",
+  state: "Ohio",
+  stateAbbr: "OH",
+  address: "123 Main St",
+  zip: "43604",
+
+  // Service area — surrounding cities for internal links and content
+  suburbs: [
+    "Perrysburg",
+    "Maumee",
+    "Sylvania",
+    "Oregon",
+    "Rossford",
+    "Waterville",
+    "Whitehouse",
+    "Bowling Green",
+    "Findlay",
+    "Fremont",
+  ],
+
+  // Domain
+  domain: "toledowelldrilling.com",
+  url: "https://www.toledowelldrilling.com",
+
+  // Business hours
+  hours: "Mon–Fri: 7:00 AM – 6:00 PM | Sat: 8:00 AM – 2:00 PM",
+
+  // Trust signals
+  license: "",
+  yearsInBusiness: 15,
+
+  // Analytics — add IDs when ready, leave empty to disable
+  ga4Id: "", // e.g. "G-XXXXXXXXXX"
+  clarityId: "", // e.g. "abcdefghij"
+
+  // Meta defaults
+  titleSuffix: "Toledo Well Drilling",
+};
