@@ -5,8 +5,8 @@
 export const siteConfig = {
   // Business info
   businessName: "Toledo Well Drilling",
-  phone: "(419) 555-0199",
-  phoneRaw: "4195550199",
+  phone: "(419) 930-4135",
+  phoneRaw: "4199304135",
   email: "info@toledowelldrilling.com",
 
   // Location
@@ -40,6 +40,10 @@ export const siteConfig = {
   // Trust signals
   license: "",
   yearsInBusiness: 15,
+
+  // GHL Form
+  ghlFormId: "VgAT3De1AUySKh8jRztU",
+  ghlFormUrl: "https://api.leadconnectorhq.com/widget/form/VgAT3De1AUySKh8jRztU",
 
   // Analytics — add IDs when ready, leave empty to disable
   ga4Id: "", // e.g. "G-XXXXXXXXXX"
