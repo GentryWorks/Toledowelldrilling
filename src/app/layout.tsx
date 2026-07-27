@@ -39,6 +39,13 @@ export default function RootLayout({
           rel="stylesheet"
         />
 
+        {/* Ahrefs Analytics */}
+        <script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="Sdu3ypDte6NKaJUAzZN3zg"
+          async
+        />
+
         {/* GA4 */}
         {siteConfig.ga4Id && (
           <>
