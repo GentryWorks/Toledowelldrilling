@@ -47,7 +47,7 @@ export const siteConfig = {
 
   // Analytics — add IDs when ready, leave empty to disable
   ga4Id: "G-3Z8QK8YFWW",
-  clarityId: "", // e.g. "abcdefghij"
+  clarityId: "xx3zfsigvt",
 
   // Meta defaults
   titleSuffix: "Toledo Well Drilling",
