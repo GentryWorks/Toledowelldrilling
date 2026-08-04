@@ -268,6 +268,7 @@ Before marking a city as BUILT in the Excel sheet:
 - [ ] Pushed to GitHub
 - [ ] GSC verified + sitemap submitted
 - [ ] Bing verified + sitemap submitted
+- [ ] Site added to Ahrefs (Site Explorer → Add new project)
 - [ ] Excel sheet updated: marked BUILT ✓ (dark navy)
 
 ---
