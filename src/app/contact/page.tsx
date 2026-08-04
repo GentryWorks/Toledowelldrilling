@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
-  const { city, stateAbbr, phone, phoneRaw, businessName, address, zip, hours, license } =
+  const { city, stateAbbr, phone, phoneRaw, businessName, hours } =
     siteConfig;
 
   return (
@@ -61,10 +61,9 @@ export default function ContactPage() {
             </div>
             <div className="text-center p-6">
               <div className="text-3xl mb-3">&#128205;</div>
-              <h3 className="text-lg font-bold text-navy mb-2">Location</h3>
-              <p className="text-gray-700">{address}</p>
+              <h3 className="text-lg font-bold text-navy mb-2">Service Area</h3>
               <p className="text-gray-700">
-                {city}, {stateAbbr} {zip}
+                {city}, {stateAbbr} and surrounding communities
               </p>
             </div>
             <div className="text-center p-6">
