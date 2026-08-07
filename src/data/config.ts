@@ -5,8 +5,8 @@
 export const siteConfig = {
   // Business info
   businessName: "Toledo Well Drilling",
-  phone: "(419) 930-4135",
-  phoneRaw: "4199304135",
+  phone: "(419) 820-9697",
+  phoneRaw: "4198209697",
   email: "info@toledowelldrilling.com",
 
   // Location
