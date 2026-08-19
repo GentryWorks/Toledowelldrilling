@@ -38,25 +38,38 @@ export default function WellDrillingPage() {
           <h2 className="text-2xl md:text-3xl font-bold text-navy mb-6">
             What Is Water Well Drilling?
           </h2>
-          <p className="text-gray-700 mb-4">
-            Water well drilling is the process of creating a borehole into the
-            ground to access underground aquifers that supply clean, natural
-            groundwater to your property. In {city}, well water is a reliable
-            and cost-effective alternative to municipal water, giving homeowners
-            independence from rising city water rates and supply disruptions.
+            <p className="text-gray-700 mb-4">
+            Water well drilling is the process of boring a hole into the
+            ground to reach an underground aquifer. An aquifer is a layer of
+            rock or sediment that holds water. Once we reach it, you get a
+            private water supply — clean groundwater piped straight to your
+            home with no monthly bill from the city.
           </p>
           <p className="text-gray-700 mb-4">
-            A properly drilled well in {state} typically reaches depths of 100
-            to 400 feet depending on your property&apos;s geology and the local
-            water table. The well is lined with steel or PVC casing, sealed at
-            the surface to prevent contamination, and connected to a pump system
-            that delivers water throughout your home or business.
+            The well is lined with steel or PVC casing to keep it clean. We
+            seal the top to block surface water and runoff. Then we connect a
+            pump system that delivers water to every fixture in your home.
           </p>
+          <p className="text-gray-700 mb-4">
+            At {businessName}, we handle the whole job from start to finish.
+            That means site evaluation, permit filing, drilling, pump
+            installation, and water testing. You make one call. We take care
+            of the rest.
+          </p>
+          <h3 className="text-xl font-bold text-navy mb-3">
+            Well Drilling in Toledo, Ohio
+          </h3>
           <p className="text-gray-700">
-            At {businessName}, we handle every step of the process from initial
-            site evaluation through final water testing. Our team works with
-            local permitting authorities to ensure your well meets all{" "}
-            {stateAbbr} state code requirements.
+            A lot of {city} area homeowners assume the clay soil in NW Ohio
+            means well water won&apos;t work near them. That is a common
+            misunderstanding. Yes, glacial clay covers most of NW Ohio — left
+            behind by the last ice age thousands of years ago. But below that
+            clay sit limestone and sandstone aquifers that hold clean,
+            reliable groundwater. Once we drill through the clay and reach
+            those deeper layers, you get a strong, productive well. Most
+            residential wells in the {city} area hit water between 60 and 150
+            feet. That is shallower than the national average, which means
+            faster drilling and a lower total cost for you.
           </p>
         </div>
       </section>
@@ -69,30 +82,34 @@ export default function WellDrillingPage() {
           </h2>
           <div className="space-y-4 text-gray-700">
             <p>
-              <strong>New construction:</strong> If you&apos;re building a home
-              in a rural area of {city} or surrounding communities where
-              municipal water lines don&apos;t reach, a drilled well is your
-              primary water source. We coordinate with your builder to ensure the
-              well is drilled before foundation work begins.
+              <strong>New construction:</strong> Building a home in a rural
+              part of {city} or the surrounding area where city water lines
+              don&apos;t reach? A drilled well is your water source. We work
+              with your builder and get the well in before foundation work
+              starts so nothing slows down your project.
             </p>
             <p>
-              <strong>Existing well failure:</strong> Wells that are 30+ years
-              old often experience declining water quality, reduced flow rates,
-              or structural issues with the casing. When rehabilitation
-              costs approach the price of a new well, replacement is the better
-              long-term investment.
+              <strong>Existing well failure:</strong> Wells that are 30 or
+              more years old can lose flow, develop water quality problems, or
+              crack in the casing. When repair costs start creeping toward the
+              price of a new well, a replacement gives you better value and
+              clean water for another 30+ years.
             </p>
             <p>
-              <strong>Property without well access:</strong> If you&apos;ve
-              purchased rural property in the {city} area that doesn&apos;t have
-              an existing well, we&apos;ll evaluate your land, identify the best
-              drilling location, and install a complete well system.
+              <strong>Property without well access:</strong> Bought rural land
+              in the {city} area with no well on it? We evaluate your
+              property, pick the best drilling spot, and put in a complete
+              water system. You go from no water to running water.
             </p>
             <p>
               <strong>Switching from city water:</strong> Some {city} area
-              homeowners choose to drill a private well to reduce monthly water
-              bills, avoid water restrictions during droughts, or simply have
-              control over their own water supply.
+              homeowners drill a well to stop paying a monthly water bill.
+              Toledo city water costs a typical household $600 to $900 per
+              year. A fully installed well in Ohio runs $5,000 to $15,000 —
+              a one-time cost. Most homeowners who switch see the well pay for
+              itself in 10 to 15 years, and they never pay a water bill again.
+              A private well also means no usage restrictions during droughts
+              and no dependence on aging city pipes.
             </p>
           </div>
         </div>
@@ -105,26 +122,25 @@ export default function WellDrillingPage() {
             Residential Well Drilling in {city}
           </h2>
           <p className="text-gray-700 mb-4">
-            Most of the wells we drill in the {city} area are for homeowners.
-            Whether you&apos;re building a new home on rural property,
-            replacing an aging well that&apos;s losing yield, or buying
-            land that doesn&apos;t have municipal water access, a
-            residential well gives your family a reliable, independent water
-            supply.
+            Most of the wells we drill in the {city} area are for
+            homeowners. The result is simple: your family gets clean water
+            on demand with no monthly bill. Whether you are building new,
+            replacing an old well, or moving to land without city water
+            access — a residential well is your answer.
           </p>
           <p className="text-gray-700 mb-4">
-            Residential wells in {state} typically range from 100 to 300
-            feet deep depending on the local water table and geology. We
-            size the well and pump system to match your household demand —
-            factoring in the number of bathrooms, appliances, and outdoor
-            water use. A properly sized system delivers consistent pressure
-            to every fixture in your home.
+            In NW Ohio, most residential wells reach water at 60 to 150
+            feet. That is shallower than most of the country, thanks to the
+            limestone and sandstone aquifers that sit below the glacial clay
+            layer. We size the pump system to match your home — number of
+            bathrooms, appliances, and outdoor use all factor in. You get
+            steady pressure at every tap.
           </p>
           <p className="text-gray-700">
-            Every residential well we drill includes a sanitary well cap,
-            steel or PVC casing, a submersible pump, pressure tank, and
-            water line to your home. We also test the water for bacteria and
-            contaminants before handing the system over to you.
+            Every well we drill comes with a sanitary cap, steel or PVC
+            casing, a submersible pump, pressure tank, and water line to
+            your home. Before we leave, we test the water for bacteria,
+            nitrates, and other contaminants. You get the results in writing.
           </p>
         </div>
       </section>
@@ -136,25 +152,20 @@ export default function WellDrillingPage() {
             Commercial Well Drilling in {city}
           </h2>
           <p className="text-gray-700 mb-4">
-            Businesses, churches, schools, and commercial properties in the{" "}
-            {city} area that sit outside municipal water service areas need a
-            reliable water source. Commercial wells require higher flow rates
-            and more durable construction than residential systems to handle
-            the demands of daily operations, employee use, and restroom
-            facilities.
+            Businesses, churches, schools, and farms in the {city} area
+            that sit outside the city water grid need a dependable water
+            source. A commercial well gives you that — with no monthly
+            utility bill eating into your operating costs.
           </p>
           <p className="text-gray-700 mb-4">
-            We drill commercial wells with larger-diameter casing and
-            high-capacity pumps designed for sustained daily use. Whether
-            you&apos;re developing a new commercial property, expanding an
-            existing facility, or replacing an underperforming well, we
-            design the system to meet your specific water volume
-            requirements.
+            Commercial wells use larger casing and high-capacity pumps built
+            for heavy daily use. We design the system around your specific
+            water volume needs, whether you are opening a new facility or
+            replacing a well that can not keep up.
           </p>
           <p className="text-gray-700">
-            Commercial projects often involve coordination with architects,
-            general contractors, and local building departments. We handle
-            the well permitting and{" "}
+            Commercial jobs often require working with your contractor or
+            building department. We handle the well permitting and{" "}
             <Link
               href="/well-inspection"
               className="text-accent hover:text-accent-dark"
@@ -173,25 +184,23 @@ export default function WellDrillingPage() {
             Agricultural &amp; Irrigation Well Drilling in {city}
           </h2>
           <p className="text-gray-700 mb-4">
-            Farms, ranches, and rural properties around {city} depend on
-            wells for livestock watering, crop irrigation, and general
-            agricultural operations. Agricultural wells are built for high
-            output — delivering the volume of water needed to sustain daily
-            farm operations without running dry during peak demand.
+            Farms and rural properties around {city} need water for
+            livestock, crop irrigation, and day-to-day operations. An
+            agricultural well delivers the volume you need without running
+            dry when demand peaks during growing season.
           </p>
           <p className="text-gray-700 mb-4">
-            We drill irrigation wells and livestock wells sized for your
-            specific acreage and water needs. Whether you need a well for a
-            small hobby farm or a large-scale irrigation system, we evaluate
-            the aquifer capacity on your property and design a well that
-            delivers consistent flow rates throughout the growing season.
+            We drill livestock wells and irrigation wells sized for your
+            land and your water needs. Whether it is a small hobby farm or
+            a large row-crop operation, we check the aquifer capacity on
+            your property and build a system with consistent flow you can
+            count on.
           </p>
           <p className="text-gray-700">
-            Agricultural wells in {state} may have different permitting
-            requirements than residential wells depending on the intended
-            water usage and volume. We handle the permitting process and
-            ensure your well complies with all {state} regulations for
-            agricultural water use.
+            Agricultural wells in {state} may have different permit
+            requirements based on water use and volume. We handle all of
+            it and make sure your well meets every {state} rule for farm
+            water use.
           </p>
         </div>
       </section>
@@ -212,10 +221,10 @@ export default function WellDrillingPage() {
                   Site Evaluation
                 </h3>
                 <p className="text-gray-700">
-                  We visit your property to assess soil conditions, review
-                  geological surveys, identify the best drilling location, and
-                  check setback distances from septic systems and property
-                  lines as required by {state} regulations.
+                  We come to your property at no charge. We look at the
+                  soil, check local geology records, and pick the best
+                  drilling spot. We also measure required setback distances
+                  from septic systems and property lines per {state} rules.
                 </p>
               </div>
             </div>
@@ -228,9 +237,10 @@ export default function WellDrillingPage() {
                   Permits &amp; Approvals
                 </h3>
                 <p className="text-gray-700">
-                  We handle all {state} well permits and coordinate with your
-                  local health department. You don&apos;t need to worry about
-                  paperwork — we manage the entire permitting process.
+                  Ohio requires a well construction permit through your local
+                  county health department before drilling can start. We
+                  handle the application and all inspections. You do not
+                  touch any paperwork.
                 </p>
               </div>
             </div>
@@ -241,10 +251,11 @@ export default function WellDrillingPage() {
               <div>
                 <h3 className="text-lg font-bold text-navy mb-2">Drilling</h3>
                 <p className="text-gray-700">
-                  Our truck-mounted drilling rig bores through soil and rock to
-                  reach the water-bearing formation. We install steel or PVC
-                  casing as we go to maintain the integrity of the borehole and
-                  prevent surface water contamination.
+                  Our truck-mounted rig bores down through the glacial clay
+                  and into the limestone or sandstone aquifer below. In NW
+                  Ohio, that is usually 60 to 150 feet. We set steel or PVC
+                  casing as we go to keep the hole solid and block surface
+                  water from getting in.
                 </p>
               </div>
             </div>
@@ -257,11 +268,12 @@ export default function WellDrillingPage() {
                   Well Development &amp; Testing
                 </h3>
                 <p className="text-gray-700">
-                  After reaching the target aquifer, we develop the well to
-                  maximize water flow, install the pump system, test the yield
-                  (gallons per minute), and submit a water sample for quality
-                  testing. You receive a complete well log documenting depth,
-                  geology, and water quality.
+                  Once we hit the aquifer, we develop the well to get the
+                  best possible flow. Then we install the pump, measure your
+                  yield in gallons per minute, and send a water sample to the
+                  lab. You get clean running water and a complete well log
+                  documenting everything — depth, geology, flow rate, and
+                  water quality results.
                 </p>
               </div>
             </div>
@@ -276,16 +288,16 @@ export default function WellDrillingPage() {
             Well Drilling Cost in {city}, {stateAbbr}
           </h2>
           <p className="text-gray-700 mb-4">
-            The cost of drilling a water well in the {city} area depends on
-            several factors including well depth, soil and rock conditions,
-            casing material, and pump system requirements. Every property is
-            different, which is why we evaluate your site and provide a
-            detailed written estimate before any work begins.
+            Well drilling costs in the {city} area depend on how deep we
+            need to drill, the casing type, and your pump system. In NW
+            Ohio, most residential wells reach water between 60 and 150
+            feet. That shallower depth keeps project costs lower than many
+            parts of the country.
           </p>
           <p className="text-gray-700 mb-4">
-            We provide free, detailed estimates after evaluating your property.
-            Our quotes include all drilling, materials, labor, permits, and
-            water testing — no hidden fees or surprise charges.
+            A fully installed well in Ohio typically runs $5,000 to $15,000.
+            Every quote we give includes drilling, casing, the pump, permits,
+            and water testing. No hidden fees. No bill surprises at the end.
           </p>
           <p className="text-gray-700">
             <strong>
@@ -309,8 +321,8 @@ export default function WellDrillingPage() {
             Well Drilling Service Areas
           </h2>
           <p className="text-gray-700 mb-4">
-            We drill wells across {city}, {stateAbbr} and the surrounding
-            areas including{" "}
+            We drill wells throughout {city}, {stateAbbr} and the surrounding
+            communities including{" "}
             {suburbs.map((suburb, i) => (
               <span key={suburb}>
                 {suburb}
@@ -320,7 +332,7 @@ export default function WellDrillingPage() {
             , and other nearby communities.
           </p>
           <p className="text-gray-700">
-            Not sure if we serve your area?{" "}
+            Not sure if we come to your area?{" "}
             <Link href="/contact" className="text-accent hover:text-accent-dark">
               Contact us
             </Link>{" "}
@@ -341,10 +353,10 @@ export default function WellDrillingPage() {
                 How long does it take to drill a well?
               </h3>
               <p className="text-gray-700">
-                Most residential wells in the {city} area take 1 to 3 days to
-                drill, depending on depth and ground conditions. The complete
-                process including permitting, drilling, pump installation, and
-                water testing typically takes 1 to 2 weeks.
+                Most wells in the {city} area take 1 to 3 days to drill.
+                NW Ohio wells are shallower than average, which keeps the
+                drilling time short. From permit to running water, the full
+                process usually takes 1 to 2 weeks.
               </p>
             </div>
             <div>
@@ -352,10 +364,12 @@ export default function WellDrillingPage() {
                 How deep will my well need to be?
               </h3>
               <p className="text-gray-700">
-                Well depth in {state} varies by location and geology. In the{" "}
-                {city} area, residential wells typically range from 100 to 400
-                feet. We evaluate your property and review geological data to
-                estimate the depth needed before drilling begins.
+                In the {city} area, most residential wells reach water at 60
+                to 150 feet. NW Ohio sits on glacial aquifers that are
+                shallower than most of the country. The limestone and
+                sandstone layers below the surface clay produce clean,
+                reliable water at those depths. We review local geology and
+                visit your land before we start.
               </p>
             </div>
             <div>
@@ -363,9 +377,10 @@ export default function WellDrillingPage() {
                 Do I need a permit to drill a well in {stateAbbr}?
               </h3>
               <p className="text-gray-700">
-                Yes, {state} requires a well drilling permit before construction
-                begins. We handle all permit applications and inspections as
-                part of our service — there&apos;s no extra charge for this.
+                Yes. {state} requires a well construction permit through your
+                local county health department before drilling begins. We
+                file all applications and handle every inspection. There is
+                no extra charge for permit work.
               </p>
             </div>
             <div>
@@ -373,10 +388,10 @@ export default function WellDrillingPage() {
                 Is well water safe to drink?
               </h3>
               <p className="text-gray-700">
-                We test every new well for bacteria, nitrates, and other
-                contaminants before handing it over. Most wells in the {city}{" "}
-                area produce clean, safe drinking water. If testing reveals any
-                concerns, we recommend appropriate{" "}
+                We test every new well for bacteria, nitrates, iron, and
+                other contaminants before the job is done. Most wells in
+                the {city} area produce clean drinking water. If the test
+                shows a problem, we recommend the right{" "}
                 <Link
                   href="/well-pump-repair"
                   className="text-accent hover:text-accent-dark"
@@ -391,10 +406,10 @@ export default function WellDrillingPage() {
                 What warranty do you offer?
               </h3>
               <p className="text-gray-700">
-                We stand behind our work with a warranty on drilling,
-                casing, and pump installation. Specific terms are provided in
-                your written estimate. Our wells are built to last 25+ years
-                with proper maintenance.
+                We back our work with a warranty on drilling, casing, and
+                pump installation. The exact terms are spelled out in your
+                written estimate before any work starts. A well we drill is
+                built to last 25 or more years with normal maintenance.
               </p>
             </div>
           </div>
@@ -408,7 +423,7 @@ export default function WellDrillingPage() {
             Ready to Drill Your Well in {city}?
           </h2>
           <p className="text-gray-300 mb-6">
-            Call today for a free site evaluation and estimate.
+            Call today for a free site visit and written estimate.
           </p>
           <a
             href={`tel:${phoneRaw}`}

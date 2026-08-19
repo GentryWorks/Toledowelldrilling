@@ -38,17 +38,23 @@ export default function WellPumpRepairPage() {
             Well Pump Repair &amp; Installation in {city}
           </h2>
           <p className="text-gray-700 mb-4">
-            Your well pump is the heart of your water system. When it fails, your
-            entire household loses water — no showers, no laundry, no flushing
-            toilets. At {businessName}, we diagnose and repair well pump
-            problems fast so {city} homeowners aren&apos;t left without water
-            longer than necessary.
+            Your well pump is what moves water from the ground into your home.
+            When it stops working, everything stops — no showers, no laundry,
+            no running toilets. We get to {city} area homeowners fast and get
+            the water back on.
           </p>
           <p className="text-gray-700 mb-4">
-            We service all types of well pumps including submersible pumps, jet
-            pumps, and booster pumps. Whether your pump needs a simple repair or
-            a full replacement, our licensed technicians have the equipment and
-            experience to get the job done right.
+            Pump failures happen most in winter and summer. Frozen lines and
+            cold temperatures put extra stress on pumps during Toledo winters.
+            Summer brings high water demand that pushes older systems past
+            their limit. If your pump fails in February, you are not waiting
+            days for help. We know NW Ohio winters and we prioritize
+            emergency calls.
+          </p>
+          <p className="text-gray-700 mb-4">
+            We work on all pump types — submersible pumps, jet pumps, and
+            booster pumps. Simple fix or full replacement, our licensed
+            technicians carry the parts and have the experience to get it done.
           </p>
           <p className="text-gray-700">
             We also install new pump systems for{" "}
@@ -73,9 +79,9 @@ export default function WellPumpRepairPage() {
             <div className="bg-white rounded-lg p-6 shadow-sm">
               <h3 className="font-bold text-navy mb-2">No Water at All</h3>
               <p className="text-gray-700 text-sm">
-                The most obvious sign. If you turn on a faucet and nothing comes
-                out, the pump may have failed, the pressure switch may be stuck,
-                or there could be an electrical issue.
+                Turn on the tap and nothing comes out. That is the clearest
+                sign your pump has failed, the pressure switch is stuck, or
+                there is an electrical problem. Call us right away.
               </p>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-sm">
@@ -83,9 +89,9 @@ export default function WellPumpRepairPage() {
                 Low or Fluctuating Pressure
               </h3>
               <p className="text-gray-700 text-sm">
-                Water pressure that drops during use or varies throughout the
-                day often indicates a failing pressure tank, a worn pump, or a
-                waterlogged tank.
+                Pressure that drops when you run the shower or bounces up and
+                down through the day usually means a failing pressure tank, a
+                worn pump, or a waterlogged tank.
               </p>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-sm">
@@ -93,9 +99,9 @@ export default function WellPumpRepairPage() {
                 Pump Runs Continuously
               </h3>
               <p className="text-gray-700 text-sm">
-                A pump that never shuts off is working overtime and will burn
-                out. This usually means a leak in the system, a bad pressure
-                switch, or a failing check valve.
+                A pump that never shuts off is heading for early burnout.
+                This usually points to a system leak, a bad pressure switch,
+                or a failing check valve. Do not ignore it.
               </p>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-sm">
@@ -103,9 +109,9 @@ export default function WellPumpRepairPage() {
                 Sputtering or Air in Lines
               </h3>
               <p className="text-gray-700 text-sm">
-                Air bursts from your faucets indicate the pump is drawing air,
-                which can mean a drop in water level, a crack in the drop pipe,
-                or a failing pump.
+                If air spits out of your faucets, the pump is pulling air
+                instead of water. That can mean the water level dropped, there
+                is a crack in the drop pipe, or the pump is failing.
               </p>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-sm">
@@ -113,9 +119,10 @@ export default function WellPumpRepairPage() {
                 Dirty or Sandy Water
               </h3>
               <p className="text-gray-700 text-sm">
-                Sediment in your water can mean the pump has dropped too low in
-                the well, the well screen is damaged, or the well itself needs
-                rehabilitation.
+                Rust-colored or gritty water can mean the pump slipped too
+                low in the well, the well screen is broken, or the well needs
+                work. NW Ohio groundwater naturally runs higher in iron, so
+                brown water is worth checking right away.
               </p>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-sm">
@@ -123,9 +130,9 @@ export default function WellPumpRepairPage() {
                 High Electric Bills
               </h3>
               <p className="text-gray-700 text-sm">
-                A pump that cycles too frequently or runs inefficiently drives
-                up electricity costs. A properly sized, modern pump can
-                significantly reduce energy usage.
+                A pump that short-cycles or runs inefficiently drives up your
+                electric bill. A properly sized, modern pump can cut energy
+                use and pay for itself over time.
               </p>
             </div>
           </div>
@@ -144,11 +151,12 @@ export default function WellPumpRepairPage() {
                 Submersible Pump Repair &amp; Replacement
               </h3>
               <p>
-                Submersible pumps sit deep inside your well and are the most
-                common type in {state}. When they fail, we pull the pump from the
-                well, diagnose the issue, and either repair or replace it.
-                Typical lifespan is 8 to 15 years depending on water conditions
-                and usage.
+                Submersible pumps sit at the bottom of your well and are the
+                most common type in {state}. When one fails, we pull it from
+                the well, find the problem, and repair or replace it. Most
+                last 8 to 15 years. Harder water with higher iron — common in
+                NW Ohio — can shorten that lifespan, so we check pump
+                condition during every service call.
               </p>
             </div>
             <div>
@@ -156,11 +164,11 @@ export default function WellPumpRepairPage() {
                 Pressure Tank Replacement
               </h3>
               <p>
-                Your pressure tank maintains consistent water pressure and
-                prevents the pump from cycling on and off with every faucet use.
-                A waterlogged or failed tank causes pressure fluctuations and
-                premature pump wear. We install properly sized tanks to match
-                your household demand.
+                The pressure tank keeps water pressure steady and stops the
+                pump from kicking on every time you open a tap. When the tank
+                gets waterlogged or fails, pressure swings and the pump wears
+                out early. We replace tanks sized for your home so the whole
+                system runs smoothly.
               </p>
             </div>
             <div>
@@ -168,11 +176,12 @@ export default function WellPumpRepairPage() {
                 Constant Pressure Systems
               </h3>
               <p>
-                Upgrade from a standard pressure tank system to a variable
-                frequency drive (VFD) constant pressure system. These
-                automatically adjust pump speed to maintain steady pressure
-                regardless of how many fixtures are running. Popular with {city}{" "}
-                homeowners who want city-water-like pressure from their well.
+                Upgrade to a constant pressure system that uses a variable
+                speed drive to adjust pump speed on the fly. The result: rock
+                steady pressure no matter how many showers, faucets, or
+                appliances are running at once. Many {city} homeowners upgrade
+                to this system when they want the same smooth pressure they
+                were used to with city water.
               </p>
             </div>
             <div>
@@ -180,10 +189,11 @@ export default function WellPumpRepairPage() {
                 Pressure Switch &amp; Controls
               </h3>
               <p>
-                We diagnose and replace faulty pressure switches, control boxes,
-                and wiring. These electrical components are often the cause of
-                pump problems and are faster and less expensive to fix than the
-                pump itself.
+                A bad pressure switch or control box can make your pump act
+                like it has failed when the real problem is cheap to fix. We
+                test and replace faulty switches, control boxes, and wiring.
+                These repairs are fast and cost much less than pulling and
+                replacing a pump.
               </p>
             </div>
           </div>
@@ -197,16 +207,14 @@ export default function WellPumpRepairPage() {
             Well Pump Repair Cost in {city}
           </h2>
           <p className="text-gray-700 mb-4">
-            Well pump repair costs in the {city} area vary depending on the
-            type of repair needed. Simple fixes like a pressure switch or
-            wiring repair cost less than a full submersible pump replacement,
-            which involves pulling the pump from deep in the well. We
-            diagnose the problem first and give you a clear written estimate
-            so you know exactly what to expect.
+            Pump repair costs in the {city} area depend on what needs to be
+            fixed. A pressure switch or wiring repair costs far less than
+            pulling and replacing a submersible pump. We diagnose first and
+            give you a written estimate before we touch anything. You know
+            the cost before we start.
           </p>
           <p className="text-gray-700">
-            We provide a clear diagnosis and written estimate before any work
-            begins. No work starts until you approve the cost.{" "}
+            No work starts until you approve it.{" "}
             <strong>
               Call{" "}
               <a
@@ -228,16 +236,16 @@ export default function WellPumpRepairPage() {
             Well Pump Service Areas
           </h2>
           <p className="text-gray-700">
-            We repair and install well pumps across {city}, {stateAbbr} and
-            the surrounding areas including{" "}
+            We repair and install well pumps throughout {city}, {stateAbbr}
+            and the surrounding areas including{" "}
             {suburbs.map((suburb, i) => (
               <span key={suburb}>
                 {suburb}
                 {i < suburbs.length - 1 ? ", " : ""}
               </span>
             ))}
-            , and other nearby communities. If your well pump is failing and
-            you need fast service, give us a call.
+            , and other nearby communities. If your pump is failing and you
+            need fast service, call us now.
           </p>
         </div>
       </section>
@@ -254,10 +262,11 @@ export default function WellPumpRepairPage() {
                 How long do well pumps last?
               </h3>
               <p className="text-gray-700">
-                Submersible well pumps typically last 8 to 15 years. Lifespan
-                depends on water quality, usage patterns, and whether the pump
-                was properly sized for your well. High sediment or mineral
-                content can shorten pump life.
+                Submersible well pumps typically last 8 to 15 years. How long
+                yours lasts depends on water quality, how much water you use,
+                and whether the pump was sized right for your well. NW Ohio
+                groundwater often runs high in iron and hardness, which can
+                wear on pump parts faster than softer water.
               </p>
             </div>
             <div>
@@ -265,11 +274,11 @@ export default function WellPumpRepairPage() {
                 Can you repair my pump the same day?
               </h3>
               <p className="text-gray-700">
-                We prioritize emergency calls because we know you can&apos;t go
-                without water. Many repairs — especially pressure switches,
-                controls, and above-ground components — can be completed the same
-                day. Submersible pump pulls require scheduling but are typically
-                completed within 24 to 48 hours.
+                We know you cannot go without water. We pick up emergency
+                calls and move fast. Pressure switch, control box, and
+                above-ground repairs often get done the same day. Pulling and
+                replacing a submersible pump takes scheduling but we typically
+                have it done within 24 to 48 hours.
               </p>
             </div>
             <div>
@@ -277,11 +286,11 @@ export default function WellPumpRepairPage() {
                 Should I repair or replace my well pump?
               </h3>
               <p className="text-gray-700">
-                If your pump is under 8 years old and the issue is electrical or
-                mechanical, repair is usually the better option. If the pump is
-                10+ years old, has failed before, or the well has water quality
-                issues that accelerate wear, replacement provides better
-                long-term value.
+                If the pump is under 8 years old and the problem is electrical
+                or mechanical, repair is almost always the right call. If it
+                is 10 or more years old, has failed before, or the well water
+                is high in iron or hardness that speeds up wear, a replacement
+                gives you better long-term value.
               </p>
             </div>
             <div>
@@ -289,11 +298,11 @@ export default function WellPumpRepairPage() {
                 What is a constant pressure system?
               </h3>
               <p className="text-gray-700">
-                A constant pressure system uses a variable frequency drive (VFD)
-                to adjust your pump&apos;s speed in real time, maintaining
-                steady water pressure no matter how many faucets, showers, or
-                appliances are running. It eliminates the pressure drops common
-                with standard tank systems.
+                A constant pressure system uses a variable speed drive to
+                adjust pump speed in real time. The result is steady water
+                pressure no matter how many showers, faucets, or appliances
+                are running at once. It solves the pressure drop problem that
+                is common with standard tank setups.
               </p>
             </div>
           </div>
@@ -307,8 +316,8 @@ export default function WellPumpRepairPage() {
             Well Pump Problems in {city}?
           </h2>
           <p className="text-gray-300 mb-6">
-            Don&apos;t go without water. Call now for fast, reliable pump
-            service.
+            Your family should not go without water. Call now and we will
+            get to you fast.
           </p>
           <a
             href={`tel:${phoneRaw}`}

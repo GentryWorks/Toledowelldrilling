@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/data/config";
-import Hero from "@/components/Hero";
-import QuoteForm from "@/components/QuoteForm";
+import HeroFormEmbed from "@/components/HeroFormEmbed";
 
 export const metadata: Metadata = {
   title: `Water Well Drilling ${siteConfig.city}, ${siteConfig.stateAbbr} | ${siteConfig.titleSuffix}`,
@@ -16,12 +15,38 @@ export default function HomePage() {
 
   return (
     <>
-      <Hero
-        title={`Water Well Drilling in ${city}, ${stateAbbr}`}
-        subtitle={`Trusted well drilling, pump repair, and water testing for homes and businesses across ${city} and surrounding areas.`}
-      />
-
-      <QuoteForm />
+      {/* 2-column Hero with inline form */}
+      <section className="relative text-white overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/hero-bg.webp')" }}
+        />
+        <div className="absolute inset-0 bg-navy/80" />
+        <div className="relative max-w-6xl mx-auto px-4 py-14 md:py-20 grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
+          {/* Left — headline + CTA (2/3 width) */}
+          <div className="md:col-span-2">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+              Water Well Drilling in {city}, {stateAbbr}
+            </h1>
+            <p className="text-lg md:text-xl text-gray-300 mb-8">
+              Trusted well drilling, pump repair, and water testing for homes and businesses across {city} and surrounding areas.
+            </p>
+            <a
+              href={`tel:${phoneRaw}`}
+              className="inline-block bg-accent hover:bg-accent-dark text-white text-xl font-bold px-8 py-4 rounded-lg transition-colors tracking-wide"
+            >
+              Call Now {phone}
+            </a>
+            <p className="mt-4 text-sm text-gray-400">
+              Free Estimates &bull; Licensed &amp; Insured
+            </p>
+          </div>
+          {/* Right — form with transparent background */}
+          <div className="bg-transparent rounded-lg p-2">
+            <HeroFormEmbed />
+          </div>
+        </div>
+      </section>
 
       {/* About Well Drilling in City */}
       <section className="py-16 px-4">
@@ -31,27 +56,22 @@ export default function HomePage() {
               Water Well Drilling in {city}, {stateAbbr}
             </h2>
             <p className="text-gray-700 mb-4">
-              If you live in a rural or semi-rural area of {city}, a private
-              water well is often the most reliable and cost-effective way to get
-              clean water to your home. Unlike municipal water, a private well
-              gives you full control over your water supply — no monthly water
-              bills, no usage restrictions during droughts, and no dependence on
-              aging city infrastructure.
+              A private well gives your family clean water with no monthly
+              bill. You don&apos;t depend on the city. You don&apos;t pay per
+              gallon. You control your own water supply — every single day.
             </p>
             <p className="text-gray-700 mb-4">
-              At {businessName}, we provide complete well drilling services for
-              homeowners and businesses across {city} and surrounding
-              communities. From the initial site evaluation to the final water
-              quality test, we handle every step of the process so you
-              don&apos;t have to coordinate between multiple contractors.
+              Northwest Ohio sits on glacial clay left behind by the last ice
+              age. Many people think that clay means no well water near{" "}
+              {city}. That&apos;s not true. Limestone and sandstone aquifers
+              sit below that clay layer. They produce clean, reliable water at
+              depths of 60 to 150 feet — shallower than the national average.
             </p>
             <p className="text-gray-700">
-              Whether you&apos;re building a new home that needs a well,
-              replacing a failing well on your property, or looking to switch
-              from city water to well water, our licensed team has the
-              equipment and local experience to get the job done right. We
-              drill in all soil and rock conditions found in the {city} area
-              and handle all {stateAbbr} well permits on your behalf.
+              At {businessName}, we drill wells for homeowners and businesses
+              across {city} and the surrounding area. We handle permits,
+              drilling, pump installation, and water testing — all in one
+              call. You get running water and peace of mind.
             </p>
           </div>
           <div className="rounded-lg overflow-hidden shadow-lg">
@@ -80,7 +100,8 @@ export default function HomePage() {
               </h3>
               <p className="text-gray-text">
                 Fully licensed and insured in {state}. Every well we drill
-                meets state code requirements and is built to last for decades.
+                meets {stateAbbr} code. We file your permit through the local
+                health department before we ever turn a drill bit.
               </p>
             </div>
             <div className="text-center p-6">
@@ -89,9 +110,9 @@ export default function HomePage() {
                 Fast Response Times
               </h3>
               <p className="text-gray-text">
-                Well pump failures can leave your family without water. We
-                prioritize emergency calls and offer same-day service when
-                possible.
+                When your pump fails, your family has no water. We pick up
+                the phone and get to you fast. Same-day service is available
+                for most pump emergencies in the {city} area.
               </p>
             </div>
             <div className="text-center p-6">
@@ -100,8 +121,9 @@ export default function HomePage() {
                 Free Estimates
               </h3>
               <p className="text-gray-text">
-                We evaluate your property, discuss your water needs, and provide
-                a clear, written estimate before any work begins. No surprises.
+                We look at your property first. Then we give you a clear,
+                written estimate — drilling, materials, pump, permits, and
+                water testing all included. No surprise charges at the end.
               </p>
             </div>
           </div>
@@ -124,10 +146,10 @@ export default function HomePage() {
                   Free Site Evaluation
                 </h3>
                 <p>
-                  We visit your property at no cost to assess the terrain,
-                  review soil and geological conditions, identify the best
-                  drilling location, and measure setback distances from septic
-                  systems and property lines as required by {state} law.
+                  We visit your property at no charge. We look at the land,
+                  check the soil, and find the best spot to drill. We also
+                  measure setback distances from septic systems and property
+                  lines, as required by {state} law.
                 </p>
               </div>
             </div>
@@ -140,10 +162,10 @@ export default function HomePage() {
                   Written Estimate &amp; Permits
                 </h3>
                 <p>
-                  You receive a detailed estimate covering drilling, casing,
-                  pump installation, and water testing — no hidden costs. We
-                  file all required {siteConfig.state} well construction
-                  permits before work begins.
+                  You get a written estimate that covers everything — drilling,
+                  casing, pump, and water testing. No hidden fees. We also
+                  file your {siteConfig.state} well construction permit with
+                  the local health department. You don&apos;t lift a finger.
                 </p>
               </div>
             </div>
@@ -156,11 +178,11 @@ export default function HomePage() {
                   Drilling &amp; Well Construction
                 </h3>
                 <p>
-                  Our truck-mounted rig drills through soil and rock to reach
-                  the water-bearing formation. We install steel or PVC casing
-                  to protect the borehole, seal the well at the surface to
-                  prevent contamination, and develop the well to maximize
-                  water flow.
+                  Our truck-mounted rig drills down through the glacial clay
+                  and into the limestone or sandstone aquifer below. We set
+                  steel or PVC casing as we go to keep the hole clean. Then we
+                  seal the top to block surface runoff and develop the well to
+                  get the best water flow possible.
                 </p>
               </div>
             </div>
@@ -173,11 +195,11 @@ export default function HomePage() {
                   Pump Installation &amp; Water Testing
                 </h3>
                 <p>
-                  We install a submersible pump sized for your well&apos;s
-                  yield and your household demand, connect the pressure tank
-                  and water line to your home, and submit a water sample for
-                  lab testing. You receive a complete well log documenting
-                  depth, geology, flow rate, and water quality results.
+                  We drop in a submersible pump sized for your home, hook up
+                  the pressure tank, and run the water line to your house.
+                  Then we pull a water sample and send it to the lab. You get
+                  running water and a full well log — depth, geology, flow
+                  rate, and water quality results all in writing.
                 </p>
               </div>
             </div>
@@ -208,10 +230,9 @@ export default function HomePage() {
                   Water Well Drilling
                 </h3>
                 <p className="text-gray-text mb-4">
-                  New residential and commercial water well construction.
-                  Professional site evaluation, drilling, casing installation, and
-                  well development. We handle permits and inspections so you
-                  don&apos;t have to.
+                  You get a private water supply with no monthly bill. We
+                  drill new wells for homes and businesses, handle all
+                  {stateAbbr} permits, and test the water before we leave.
                 </p>
                 <span className="text-accent font-medium">
                   Learn more &rarr;
@@ -234,9 +255,9 @@ export default function HomePage() {
                   Well Pump Installation &amp; Repair
                 </h3>
                 <p className="text-gray-text mb-4">
-                  Submersible pump installation, jet pump repair, pressure tank
-                  replacement, and constant pressure system upgrades. We service
-                  all brands and restore your water supply fast.
+                  Your water comes back on fast. We fix submersible pumps,
+                  jet pumps, pressure tanks, and controls. We work on all
+                  brands and get most {city} homes running water the same day.
                 </p>
                 <span className="text-accent font-medium">
                   Learn more &rarr;
@@ -259,9 +280,10 @@ export default function HomePage() {
                   Well Inspection &amp; Water Testing
                 </h3>
                 <p className="text-gray-text mb-4">
-                  Annual well inspections, flow rate testing, water quality
-                  analysis, and real estate well certifications. Know
-                  what&apos;s in your water and keep your family safe.
+                  You know exactly what is in your water. We test for
+                  bacteria, nitrates, iron, and hardness. We also handle real
+                  estate well certifications for home buyers and sellers in{" "}
+                  {city}.
                 </p>
                 <span className="text-accent font-medium">
                   Learn more &rarr;
@@ -279,23 +301,23 @@ export default function HomePage() {
             How Much Does Well Drilling Cost in {city}?
           </h2>
           <p className="text-gray-700 mb-4">
-            The cost of drilling a water well in the {city} area depends on
-            several factors including well depth, ground conditions, casing
-            material, and the type of pump system you need. Every property is
-            different, which is why we provide free, on-site estimates
-            tailored to your specific situation.
+            Well drilling costs in the {city} area depend on how deep we need
+            to drill, the type of casing, and the pump system you need. In
+            NW Ohio, most residential wells hit water between 60 and 150 feet.
+            That shallower depth keeps costs lower than many parts of the
+            country.
           </p>
           <p className="text-gray-700 mb-4">
-            Factors that affect pricing include how deep we need to drill to
-            reach the aquifer, whether the ground is soft soil or hard rock,
-            the diameter of the well casing, and the type of pump system
-            installed. Shallow wells in favorable soil conditions cost less,
-            while deep wells through rock formations cost more.
+            A fully installed well in Ohio typically runs $5,000 to $15,000.
+            That is a one-time cost. Compare that to Toledo city water, which
+            runs $600 to $900 per year for a typical household. Most homeowners
+            who switch to well water see the well pay for itself within 10 to
+            15 years — and they stop paying a water bill for good.
           </p>
           <p className="text-gray-700">
             We provide free, written estimates after evaluating your property.
-            Our quotes include everything — drilling, materials, labor,
-            permits, and water testing. No hidden fees.{" "}
+            The quote covers drilling, materials, labor, permits, and water
+            testing. No hidden fees.{" "}
             <strong>
               Call{" "}
               <a
@@ -321,7 +343,7 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-navy/60" />
         <div className="relative h-full flex items-center justify-center text-center px-4">
           <p className="text-white text-2xl md:text-3xl font-bold max-w-2xl">
-            Trusted by {city} homeowners for reliable water well services.
+            {city} families count on us for clean water every day.
           </p>
         </div>
       </section>
@@ -338,10 +360,10 @@ export default function HomePage() {
                 How long does it take to drill a well?
               </h3>
               <p className="text-gray-700">
-                Most residential wells in the {city} area take 1 to 3 days to
-                drill. The complete process — including permitting, drilling,
-                pump installation, and water testing — typically takes 1 to 2
-                weeks from start to finish.
+                Most wells in the {city} area take 1 to 3 days to drill. From
+                permit to running water, the full process usually takes 1 to 2
+                weeks. NW Ohio wells are shallower than average, which helps
+                keep the timeline short.
               </p>
             </div>
             <div>
@@ -349,11 +371,11 @@ export default function HomePage() {
                 How deep will my well need to be?
               </h3>
               <p className="text-gray-700">
-                Well depth depends on your property&apos;s geology and the
-                local water table. In the {city} area, residential wells
-                typically range from 100 to 400 feet. We review geological
-                data and evaluate your property to estimate depth before
-                drilling begins.
+                In the {city} area, most residential wells reach water between
+                60 and 150 feet. NW Ohio sits on glacial aquifers that are
+                shallower than most of the country. We review local geology
+                and visit your property before drilling so there are no
+                surprises.
               </p>
             </div>
             <div>
@@ -362,9 +384,9 @@ export default function HomePage() {
               </h3>
               <p className="text-gray-700">
                 Yes. {siteConfig.state} requires a well construction permit
-                before drilling can begin. We handle all permit applications,
-                inspections, and documentation as part of our service at no
-                extra charge.
+                before any drilling starts. The permit goes through your local
+                county health department. We file everything and handle all
+                inspections — no extra charge to you.
               </p>
             </div>
             <div>
@@ -372,9 +394,9 @@ export default function HomePage() {
                 How do I know if my well pump is failing?
               </h3>
               <p className="text-gray-700">
-                Common signs include no water, low or fluctuating pressure,
-                a pump that runs constantly, sputtering faucets, dirty water,
-                or unusually high electric bills. If you notice any of these,{" "}
+                Watch for no water at the tap, low pressure, a pump that
+                never shuts off, sputtering faucets, rust-colored water, or a
+                spike in your electric bill. If you see any of those signs,{" "}
                 <Link
                   href="/well-pump-repair"
                   className="text-accent hover:text-accent-dark"
@@ -389,17 +411,17 @@ export default function HomePage() {
                 Is well water safe to drink?
               </h3>
               <p className="text-gray-700">
-                Most wells in the {city} area produce clean, safe drinking
-                water. We{" "}
+                Most wells in the {city} area produce clean drinking water. We{" "}
                 <Link
                   href="/well-inspection"
                   className="text-accent hover:text-accent-dark"
                 >
                   test every new well
                 </Link>{" "}
-                for bacteria, nitrates, and other contaminants before handing
-                it over. Annual testing is recommended to ensure ongoing water
-                quality.
+                for bacteria, nitrates, iron, and other contaminants before
+                the job is done. We recommend testing every year, especially
+                near farmland where spring runoff can carry nitrates into
+                shallow groundwater.
               </p>
             </div>
             <div>
@@ -407,13 +429,12 @@ export default function HomePage() {
                 Well water vs. city water — which is better?
               </h3>
               <p className="text-gray-700">
-                Well water eliminates monthly water bills, gives you
-                independence from municipal supply issues, and is often
-                naturally filtered through rock and soil. City water is
-                treated and monitored by the municipality but comes with
-                ongoing costs and occasional restrictions. For {city}{" "}
-                homeowners in areas without city water access, a private well
-                is the clear choice.
+                Well water means no monthly bill and no city water
+                restrictions. City water is treated and always on, but you pay
+                for every gallon. Toledo city water costs a typical household
+                $600 to $900 a year. A new well runs $5,000 to $15,000 total
+                — a one-time cost that pays for itself and then saves you money
+                for decades.
               </p>
             </div>
           </div>
@@ -427,17 +448,16 @@ export default function HomePage() {
             Serving {city} and Surrounding Areas
           </h2>
           <p className="text-gray-700">
-            We provide water well drilling, pump repair, and water testing
-            services across {city}, {stateAbbr} and the surrounding
-            communities including{" "}
+            We drill and service wells across {city}, {stateAbbr} and the
+            surrounding communities including{" "}
             {suburbs.map((suburb, i) => (
               <span key={suburb}>
                 {suburb}
                 {i < suburbs.length - 1 ? ", " : ""}
               </span>
             ))}
-            , and other nearby areas. If you&apos;re located in the greater{" "}
-            {city} area and need a well drilled or serviced, call us for a
+            , and other nearby areas. If you are anywhere in the greater{" "}
+            {city} region and need a well drilled or fixed, call us for a
             free estimate.
           </p>
         </div>
@@ -450,7 +470,7 @@ export default function HomePage() {
             Need a Well Drilled in {city}?
           </h2>
           <p className="text-gray-300 mb-6">
-            Call us today for a free, no-obligation estimate.
+            Call today for a free estimate. No obligation.
           </p>
           <a
             href={`tel:${phoneRaw}`}

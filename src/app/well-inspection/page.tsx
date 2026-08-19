@@ -38,25 +38,23 @@ export default function WellInspectionPage() {
             Well Inspection &amp; Water Testing in {city}
           </h2>
           <p className="text-gray-700 mb-4">
-            A well inspection is a comprehensive checkup of your entire water
-            well system — from the well cap at the surface to the pump sitting
-            hundreds of feet underground. At {businessName}, we inspect every
-            component to make sure your well is delivering safe, clean water at
-            the flow rate and pressure your household needs.
+            A well inspection is a full checkup of your water system — from
+            the cap at the surface all the way down to the pump. At{" "}
+            {businessName}, we look at every part to make sure your well is
+            giving your family safe, clean water at good pressure and flow.
           </p>
           <p className="text-gray-700 mb-4">
-            Water testing goes hand in hand with inspections. Even if your well
-            looks fine on the outside, the water itself can contain bacteria,
-            minerals, or contaminants that are invisible to the eye. The EPA
-            recommends private well owners test their water at least once per
-            year, and more often if you notice changes in taste, odor, or
-            appearance.
+            Water testing works alongside the inspection. Your well can look
+            fine on the outside and still have bacteria, iron, or nitrates
+            you cannot see, smell, or taste. The EPA tells private well
+            owners to test at least once a year. If you notice any change in
+            taste, smell, or color, test sooner.
           </p>
           <p className="text-gray-700">
-            Whether you need an annual checkup, a real estate well
-            certification, or you&apos;ve noticed something off with your water,
-            {businessName} provides thorough inspections and lab-grade water
-            testing for {city} homeowners.
+            Annual checkup, real estate well cert, or something just seems
+            off with your water — {businessName} does thorough inspections
+            and lab-quality water tests for {city} homeowners. You get clear
+            results and straight answers about what they mean.
           </p>
         </div>
       </section>
@@ -70,35 +68,34 @@ export default function WellInspectionPage() {
           <div className="space-y-4 text-gray-700">
             <p>
               <strong>Annual maintenance:</strong> The National Ground Water
-              Association recommends having your well inspected at least once per
-              year. Annual inspections catch small problems — like a cracked well
-              cap or a slow decline in flow rate — before they become expensive
-              emergencies.
+              Association says to get your well inspected at least once a
+              year. Annual visits catch small problems early — a cracked cap,
+              a slow drop in flow rate — before they turn into big repair
+              bills.
             </p>
             <p>
-              <strong>Buying or selling a home:</strong> Most lenders and many
-              buyers in the {city} area require a well inspection and water test
-              before closing. We provide certified inspection reports that
-              satisfy real estate transaction requirements in {stateAbbr}.
+              <strong>Buying or selling a home:</strong> Most lenders in the{" "}
+              {city} area require a well inspection and water test before
+              closing. We provide certified inspection reports that meet
+              lender and real estate requirements in {stateAbbr}.
             </p>
             <p>
-              <strong>Changes in water quality:</strong> If your water suddenly
-              tastes different, smells like rotten eggs, appears cloudy or
-              discolored, or leaves stains on fixtures, those are signs that
-              something has changed in your well or aquifer. An inspection and
-              water test will identify the cause.
+              <strong>Changes in water quality:</strong> Water that suddenly
+              tastes off, smells like rotten eggs, looks cloudy, or leaves
+              orange stains on sinks and tubs is telling you something
+              changed. An inspection and water test will find out what.
             </p>
             <p>
-              <strong>After flooding or severe weather:</strong> Heavy rain,
-              flooding, or nearby construction can introduce surface water
-              contamination into your well. A post-event inspection and bacteria
-              test ensures your water is still safe.
+              <strong>After flooding or severe weather:</strong> Heavy rain
+              and flooding can push surface water into your well. A bacteria
+              test after a big storm or flood makes sure your water is still
+              safe to drink.
             </p>
             <p>
-              <strong>New property with an existing well:</strong> If you&apos;ve
-              moved to a property with a well you didn&apos;t drill, an
-              inspection tells you the condition of the system and whether any
-              repairs or upgrades are needed.
+              <strong>New property with an existing well:</strong> Moved to
+              a home with a well you did not drill? An inspection tells you
+              what shape the system is in and what repairs or upgrades it
+              needs.
             </p>
           </div>
         </div>
@@ -116,17 +113,17 @@ export default function WellInspectionPage() {
                 Well Cap &amp; Seal
               </h3>
               <p className="text-gray-700 text-sm">
-                We check that the well cap is secure, the sanitary seal is
-                intact, and no insects, rodents, or surface water can enter
-                the well casing.
+                We make sure the cap is tight, the sanitary seal is solid,
+                and nothing — not bugs, rodents, or surface runoff — can
+                get into the casing.
               </p>
             </div>
             <div className="bg-gray-bg rounded-lg p-6">
               <h3 className="font-bold text-navy mb-2">Well Casing</h3>
               <p className="text-gray-700 text-sm">
-                We inspect visible casing for cracks, corrosion, or damage.
-                Compromised casing can allow contaminants to seep into your
-                water supply.
+                We look for cracks, corrosion, or physical damage in the
+                visible casing. A damaged casing lets surface water and
+                contaminants into your water supply.
               </p>
             </div>
             <div className="bg-gray-bg rounded-lg p-6">
@@ -134,9 +131,8 @@ export default function WellInspectionPage() {
                 Flow Rate &amp; Yield
               </h3>
               <p className="text-gray-700 text-sm">
-                We measure your well&apos;s output in gallons per minute to
-                ensure it meets your household demand. A declining flow rate
-                can signal a{" "}
+                We measure how many gallons per minute your well produces.
+                A dropping flow rate is an early warning sign of a{" "}
                 <Link
                   href="/well-pump-repair"
                   className="text-accent hover:text-accent-dark"
@@ -151,17 +147,17 @@ export default function WellInspectionPage() {
                 Pump &amp; Pressure System
               </h3>
               <p className="text-gray-700 text-sm">
-                We test pump performance, check the pressure tank for proper
-                charge, verify pressure switch settings, and inspect electrical
-                connections for safety.
+                We test pump output, check the pressure tank charge, verify
+                switch settings, and look at all electrical connections for
+                safety issues.
               </p>
             </div>
             <div className="bg-gray-bg rounded-lg p-6">
               <h3 className="font-bold text-navy mb-2">Water Level</h3>
               <p className="text-gray-700 text-sm">
-                We measure the static water level (at rest) and drawdown level
-                (while pumping) to assess aquifer health and ensure your pump
-                is set at the correct depth.
+                We measure the water level at rest and while pumping. This
+                tells us how healthy the aquifer is and whether your pump is
+                set at the right depth.
               </p>
             </div>
             <div className="bg-gray-bg rounded-lg p-6">
@@ -169,9 +165,10 @@ export default function WellInspectionPage() {
                 Surrounding Area
               </h3>
               <p className="text-gray-700 text-sm">
-                We check for potential contamination sources near the wellhead
-                — septic systems, chemical storage, animal pens, or runoff
-                paths that could affect water quality.
+                We look at what is near your wellhead — septic systems,
+                chemical storage, animal areas, or drainage paths that could
+                contaminate the water. In NW Ohio farmland areas, runoff
+                paths from fields are especially worth checking.
               </p>
             </div>
           </div>
@@ -186,8 +183,8 @@ export default function WellInspectionPage() {
           </h2>
           <p className="text-gray-700 mb-6">
             We collect water samples from your well and send them to a
-            certified laboratory for analysis. Results typically come back
-            within 5 to 10 business days. Here&apos;s what we test for:
+            certified lab. Results come back within 5 to 10 business days.
+            Here is what we test for:
           </p>
           <div className="space-y-4 text-gray-700">
             <div>
@@ -195,10 +192,10 @@ export default function WellInspectionPage() {
                 Bacteria Testing
               </h3>
               <p>
-                Total coliform and E. coli testing detects bacterial
-                contamination that can cause illness. This is the most
-                important test for private wells and should be done annually.
-                If bacteria is detected, we can{" "}
+                Total coliform and E. coli tests check for bacteria that can
+                make your family sick. This is the single most important test
+                for private well owners and it should be done every year. If
+                bacteria shows up, we can{" "}
                 <Link
                   href="/water-well-drilling"
                   className="text-accent hover:text-accent-dark"
@@ -213,11 +210,13 @@ export default function WellInspectionPage() {
                 Mineral &amp; Hardness Analysis
               </h3>
               <p>
-                We test for iron, manganese, calcium, magnesium, and pH
-                levels. High iron causes orange staining on fixtures. Hard
-                water leaves scale buildup in pipes and appliances. These
-                results help us recommend the right treatment system if
-                needed.
+                We test for iron, manganese, calcium, magnesium, and pH.
+                NW Ohio groundwater often runs high in iron and hardness —
+                both are common results of the limestone aquifers in the
+                area. High iron leaves orange stains on your sinks, tubs,
+                and laundry. Hard water leaves white scale buildup in your
+                pipes and appliances. Test results help us point you to the
+                right treatment system if needed.
               </p>
             </div>
             <div>
@@ -225,10 +224,17 @@ export default function WellInspectionPage() {
                 Nitrate &amp; Contaminant Screening
               </h3>
               <p>
-                Nitrates from agricultural runoff or failing septic systems are
-                a common concern in {state}. We also screen for arsenic, lead,
-                and other contaminants based on local geology and known risks
-                in the {city} area.
+                The {city} area and the surrounding Maumee River valley are
+                surrounded by farmland. Every spring, rainwater carries
+                nitrates from farm fields into shallow groundwater. Nitrates
+                are odorless and colorless — you will never know they are
+                there without a test. They are especially dangerous for
+                infants and young children. High nitrate levels in baby
+                formula water can cause a serious condition called blue baby
+                syndrome. Annual testing catches this before it becomes a
+                health problem. We also screen for arsenic, lead, and other
+                contaminants based on local geology and known risks in the{" "}
+                {city} area.
               </p>
             </div>
             <div>
@@ -236,10 +242,10 @@ export default function WellInspectionPage() {
                 Real Estate Water Testing
               </h3>
               <p>
-                Buying or selling a home with a well in {city}? We provide the
-                water quality testing required for mortgage lending and real
-                estate closings. Our reports are accepted by lenders and
-                inspectors across {stateAbbr}.
+                Buying or selling a home with a well in {city}? We provide
+                the water quality testing your lender requires. Our reports
+                are accepted by mortgage lenders and inspectors across{" "}
+                {stateAbbr} and get deals closed without delays.
               </p>
             </div>
           </div>
@@ -253,13 +259,11 @@ export default function WellInspectionPage() {
             Well Inspection Cost in {city}, {stateAbbr}
           </h2>
           <p className="text-gray-700 mb-4">
-            The cost of a well inspection in the {city} area depends on the
-            scope of the inspection and whether water testing is included. A
-            basic visual inspection costs less than a comprehensive checkup
-            with full water quality lab analysis. Real estate well
-            certifications are more detailed due to lender reporting
-            requirements. We provide clear pricing upfront before scheduling
-            your inspection.
+            Inspection cost in the {city} area depends on what is included.
+            A basic visual check costs less than a full checkup with lab
+            water testing. Real estate certifications cost more because they
+            require detailed lender-ready reports. We give you clear pricing
+            upfront before we schedule anything.
           </p>
           <p className="text-gray-700">
             <strong>
@@ -283,7 +287,7 @@ export default function WellInspectionPage() {
             Well Inspection Service Areas
           </h2>
           <p className="text-gray-700">
-            We provide well inspections and water testing across {city},{" "}
+            We provide well inspections and water testing throughout {city},{" "}
             {stateAbbr} and the surrounding areas including{" "}
             {suburbs.map((suburb, i) => (
               <span key={suburb}>
@@ -291,9 +295,8 @@ export default function WellInspectionPage() {
                 {i < suburbs.length - 1 ? ", " : ""}
               </span>
             ))}
-            , and other nearby communities. Whether you need an annual
-            checkup or a real estate well certification, we&apos;re here to
-            help.
+            , and other nearby communities. Annual checkup or real estate
+            cert — we are here to help.
           </p>
         </div>
       </section>
@@ -310,10 +313,10 @@ export default function WellInspectionPage() {
                 How often should I have my well inspected?
               </h3>
               <p className="text-gray-700">
-                At least once per year. Annual inspections catch problems
-                early and help ensure your water stays safe. You should also
-                get an inspection after any flooding, nearby construction, or
-                changes in water taste, smell, or appearance.
+                At least once a year. Annual inspections catch small problems
+                before they become expensive ones. Also get an inspection
+                after any flooding, nearby construction, or if your water
+                changes in taste, smell, or color.
               </p>
             </div>
             <div>
@@ -322,9 +325,10 @@ export default function WellInspectionPage() {
               </h3>
               <p className="text-gray-700">
                 The EPA recommends testing for bacteria and nitrates at least
-                once per year. Test more frequently if you have infants in the
-                home, if your well has had past contamination, or if you live
-                near agricultural land.
+                once a year. Test more often if you have infants in the home,
+                if your well has had past contamination, or if you live near
+                farmland. The {city} area is surrounded by agricultural land,
+                and spring nitrate runoff is a real concern here.
               </p>
             </div>
             <div>
@@ -332,11 +336,10 @@ export default function WellInspectionPage() {
                 What happens if bacteria is found in my well water?
               </h3>
               <p className="text-gray-700">
-                Don&apos;t panic — it&apos;s fixable. We shock chlorinate the
-                well to kill the bacteria, then retest to confirm it&apos;s
-                clear. If contamination recurs, we investigate the source and
-                recommend permanent solutions like UV disinfection or well
-                repairs.
+                It is fixable. We shock chlorinate the well to kill the
+                bacteria, then retest to confirm it is gone. If it keeps
+                coming back, we dig into the source and recommend a permanent
+                fix — UV disinfection, well repairs, or a seal upgrade.
               </p>
             </div>
             <div>
@@ -344,11 +347,10 @@ export default function WellInspectionPage() {
                 Do I need a well inspection to sell my house?
               </h3>
               <p className="text-gray-700">
-                In most cases, yes. Most mortgage lenders require a well
-                inspection and water test for homes with private wells. Even
-                if not required, buyers typically request one during due
-                diligence. Having a recent inspection report ready can speed up
-                the sale.
+                In most cases, yes. Most lenders require a well inspection
+                and water test for homes with private wells. Even when it is
+                not required, buyers ask for one during due diligence. Having
+                a fresh inspection report ready speeds up the sale.
               </p>
             </div>
             <div>
@@ -356,11 +358,11 @@ export default function WellInspectionPage() {
                 Why does my well water smell like rotten eggs?
               </h3>
               <p className="text-gray-700">
-                That smell is hydrogen sulfide gas, which is common in well
-                water. It&apos;s usually not harmful at low levels but is
-                unpleasant. A water test confirms the level, and treatment
+                That is hydrogen sulfide gas — common in well water across
+                NW Ohio. At low levels it is not dangerous but it is
+                unpleasant. A water test confirms how much is there. Treatment
                 options include aeration systems, carbon filters, or chemical
-                injection depending on severity.
+                injection depending on the level.
               </p>
             </div>
           </div>
@@ -374,7 +376,7 @@ export default function WellInspectionPage() {
             Schedule Your Well Inspection in {city}
           </h2>
           <p className="text-gray-300 mb-6">
-            Know what&apos;s in your water. Call today to book an inspection.
+            Know what is in your water. Call today to book an inspection.
           </p>
           <a
             href={`tel:${phoneRaw}`}
