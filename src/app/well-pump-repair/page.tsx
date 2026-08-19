@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/data/config";
 import Hero from "@/components/Hero";
-import QuoteForm from "@/components/QuoteForm";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
@@ -29,7 +28,6 @@ export default function WellPumpRepairPage() {
         subtitle={`Fast, reliable well pump repair and installation. We restore your water supply and keep it running.`}
       />
 
-      <QuoteForm />
 
       {/* What Is Well Pump Repair */}
       <section className="py-16 px-4">

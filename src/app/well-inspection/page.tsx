@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/data/config";
 import Hero from "@/components/Hero";
-import QuoteForm from "@/components/QuoteForm";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
@@ -29,7 +28,6 @@ export default function WellInspectionPage() {
         subtitle={`Protect your family's water supply with professional well inspections and water quality testing.`}
       />
 
-      <QuoteForm />
 
       {/* What Is a Well Inspection */}
       <section className="py-16 px-4">

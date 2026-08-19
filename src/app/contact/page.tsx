@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { siteConfig } from "@/data/config";
-import QuoteForm from "@/components/QuoteForm";
+import HeroFormEmbed from "@/components/HeroFormEmbed";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
@@ -22,24 +22,38 @@ export default function ContactPage() {
     <>
       <Breadcrumbs items={[{ label: "Contact" }]} />
 
-      {/* Page Header */}
-      <section className="bg-navy text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-3xl md:text-5xl font-bold mb-4">Contact Us</h1>
-          <p className="text-lg text-gray-300 mb-6">
-            Get a free quote for well drilling or pump service in {city},{" "}
-            {stateAbbr}.
-          </p>
-          <a
-            href={`tel:${phoneRaw}`}
-            className="inline-block bg-accent hover:bg-accent-dark text-white text-xl md:text-2xl font-bold px-8 py-4 rounded-lg transition-colors"
-          >
-            Call Now {phone}
-          </a>
+      {/* 2-column Hero with inline form */}
+      <section className="relative text-white overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/hero-bg.webp')" }}
+        />
+        <div className="absolute inset-0 bg-navy/80" />
+        <div className="relative max-w-6xl mx-auto px-4 py-14 md:py-20 grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
+          {/* Left — headline + CTA (2/3 width) */}
+          <div className="md:col-span-2">
+            <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
+              Get a Free Quote
+            </h1>
+            <p className="text-lg md:text-xl text-gray-300 mb-8">
+              Get a free quote for well drilling or pump service in {city}, {stateAbbr}. We respond within 24 hours.
+            </p>
+            <a
+              href={`tel:${phoneRaw}`}
+              className="inline-block bg-accent hover:bg-accent-dark text-white text-xl font-bold px-8 py-4 rounded-lg transition-colors tracking-wide"
+            >
+              Call Now {phone}
+            </a>
+            <p className="mt-4 text-sm text-gray-400">
+              Free Estimates &bull; Licensed &amp; Insured
+            </p>
+          </div>
+          {/* Right — form with transparent background */}
+          <div className="bg-transparent rounded-lg p-2">
+            <HeroFormEmbed />
+          </div>
         </div>
       </section>
-
-      <QuoteForm />
 
       {/* Contact Info */}
       <section className="py-16 px-4">
